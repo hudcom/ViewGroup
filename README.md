@@ -22,7 +22,8 @@
 Розміщує дочірні елементи відносно один одного або відносно батьківського контейнера. Загалом робить те ж саме що і Constraint Layout, тільки використовує інші властивості. 
 
 - Motion Layout
-- ![Анімація][ice_video_20240720-185925.webm](https://github.com/user-attachments/assets/f639c6b3-36a1-4c09-a04c-93e788dc90e9)
+- ![ice_video_20240720-185925](https://github.com/user-attachments/assets/f07ec247-042c-4276-bfa5-e765fbe4f641)
+
 
 Це розширення ConstraintLayout, яке використовується для створення складних анімацій і переходів.
 

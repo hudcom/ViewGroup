@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Початковий ConstraintSet -->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:rotationY="360"
+            android:rotation="0" />
+        <Constraint
+            android:id="@+id/btn1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="400dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/btn2"
+            motion:layout_constraintTop_toBottomOf="@+id/text1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/btn2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="400dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/btn3"
+            motion:layout_constraintTop_toBottomOf="@+id/btn1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/btn3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="400dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/btn2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/text1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/backBtn"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:translationY="10dp"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <!-- Кінцевий ConstraintSet -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="40dp" />
+        <Constraint
+            android:id="@+id/btn1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="400dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/btn2"
+            motion:layout_constraintTop_toBottomOf="@+id/text1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/btn2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_max="400dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/btn3"
+            motion:layout_constraintTop_toBottomOf="@+id/btn1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/btn3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="400dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/btn2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/text1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/backBtn"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:translationY="0dp"
+            android:alpha="1" />
+    </ConstraintSet>
+
+    <!-- Опис переходу між станами -->
+    <Transition
+        android:id="@+id/transition"
+        motion:constraintSetStart="@id/start"
+        motion:constraintSetEnd="@id/end"
+        motion:duration="1500"
+        motion:autoTransition="animateToStart"
+        motion:staggered="0.65">
+    </Transition>
+</MotionScene>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_back"
+        android:contentDescription="@string/app_name"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Текст в верхній частині -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grid_layout_title"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- GridLayout з кнопками -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Кнопка 1 -->
+        <Button
+            android:id="@+id/button1"
+            style="@style/CustomButtonStyle"
+            android:text="@string/btn1"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="8dp"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Кнопка 2 -->
+        <Button
+            android:id="@+id/button2"
+            style="@style/CustomButtonStyle"
+            android:text="@string/btn2"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="8dp"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Кнопка 3 -->
+        <Button
+            android:id="@+id/button3"
+            style="@style/CustomButtonStyle"
+            android:text="@string/btn3"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="8dp"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Кнопка 4 -->
+        <Button
+            android:id="@+id/button4"
+            style="@style/CustomButtonStyle"
+            android:text="@string/btn4"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="8dp"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Кнопка 5 -->
+        <Button
+            android:id="@+id/button5"
+            style="@style/CustomButtonStyle"
+            android:text="@string/btn5"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="8dp"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Кнопка 6 -->
+        <Button
+            android:id="@+id/button6"
+            style="@style/CustomButtonStyle"
+            android:text="@string/btn6"
+            android:drawableLeft="@drawable/ic_icon"
+            android:drawablePadding="8dp"
+            tools:ignore="RtlHardcoded" />
+
+    </GridLayout>
+
+</RelativeLayout>

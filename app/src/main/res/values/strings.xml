@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ViewGroups</string>
+    <string name="title">This is a pet project on ViewGroups</string>
+
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="constraintlayout_info">ConstraintLayout - це гнучкий макет, який дозволяє створювати складні інтерфейси, використовуючи обмеження для позиціонування елементів.</string>
+    <string name="constraintlayout_short_info">На головному екрані розтаування об\'єктів виконано за допомогою ConstraintLayout</string>
+
+    <string name="linear_layout">Linear Layout</string>
+    <string name="linearlayout_info">LinearLayout - розміщує дочірні елементи в один рядок (горизонтально або вертикально).</string>
+    <string name="vertical_linearlayout">Вертикальний LinearLayout</string>
+    <string name="horizontal_linearlayout">Горизонтальний LinearLayout</string>
+    <string name="linearlayout_info2">Простий у використанні, але може призвести до погіршення продуктивності при глибокій вкладеності. Як, наприклад, в вертикальному LinearLayout</string>
+
+    <string name="frame_layout">Frame Layout</string>
+    <string name="framelayout_info">FrameLayout - це простий макет, який зазвичай використовується для відображення одного дочірнього елемента, але може містити декілька, що перекривають один одного.</string>
+
+    <string name="relative_layout">Relative Layout</string>
+    <string name="relativelayout_info">RelativeLayout - розміщує дочірні елементи відносно один одного або відносно батьківського контейнера.</string>
+    <string name="relativelayout_info2">Загалом RelativeLayout повторює функціонал ConstraintLayout, однак використовує для цього інші властивості для позиціонування.</string>
+
+
+    <string name="grid_layout">Grid Layout</string>
+
+
+    <string name="motion_layout">Motion Layout</string>
+    <string name="motionlayout_info">MotionLayout — це потужний інструмент для створення анімацій та переходів у вашому додатку. Він є частиною бібліотеки `ConstraintLayout` і дозволяє описувати складні анімації за допомогою XML без необхідності писати код на Java або Kotlin.</string>
+    <string name="grid_layout_title">Grid Layout</string>
+    <string name="btn1">Btn1</string>
+    <string name="btn2">Btn2</string>
+    <string name="btn3">Btn3</string>
+    <string name="btn4">Btn4</string>
+    <string name="btn5">Btn5</string>
+    <string name="btn6">Btn6</string>
+
+
+</resources>
